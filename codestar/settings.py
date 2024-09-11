@@ -35,7 +35,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["8000-owend24-djangoblog-r1umyceemy7.ws.codeinstitute-ide.net", ".herokuapp.com"]
 
@@ -98,8 +98,8 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://8000-owend24-djangoblog-r1umyceemy7.ws.codeinstitute-ide.net/",
-    "https://django-blog244-22cc7f13434b.herokuapp.com"
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
 ]
 
 # Password validation
