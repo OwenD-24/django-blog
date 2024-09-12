@@ -4,8 +4,8 @@ from .models import Post
 
 # Create your views here
 class PostList(generic.ListView):
-    model = Post
-    template_name = 'blog/post_list.html'
+    queryset = Post.objects.all()
+    template_name = "post_list.html"
 
 
 
