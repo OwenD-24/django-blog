@@ -37,7 +37,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if os.path.isfile("env.py"):
-    DEBUG = True
+    DEBUG = False
 else:
     DEBUG = False
 
